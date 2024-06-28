@@ -7,7 +7,7 @@ This repo is an micro flask API with only one GET endpoint who let you see the s
   - Create your TOKEN and replace it in the command below
 
 ```bash
-pip install -r requirements.txt && sudo ufw allow 5000 && API_TOKEN=YOUR_API_TOKEN gunicorn -w 4 -b 0.0.0.0:5000 "api:create_app()" &
+pip install -r requirements.txt && sudo ufw allow 5000 && API_TOKEN=YOUR_API_TOKEN gunicorn -w 4 -b 0.0.0.0:5000 "main:create_app()" &
 ```
 
 ### Usage
