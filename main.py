@@ -29,9 +29,7 @@ def create_app():
 
     @app.route('/api/containers', methods=['GET'])
     def get_containers():
-        token = request.headers.get('Authorization')
-
-        if not token or token != f"Bearer {API_TOKEN}":
+        if request.headers.get('Authorization') != f"Bearer {API_TOKEN}":
             return jsonify({"error": "Unauthorized"}), 401
 
         try:
