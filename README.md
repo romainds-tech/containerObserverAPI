@@ -1,4 +1,4 @@
-# Container status API
+# Container Observer API
 This repo is an micro flask API with only one GET endpoint who let you see the status of yours docker containers
 
 ### Installation
